@@ -6,17 +6,18 @@ import time
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 
 class NewLoginTest(StaticLiveServerTestCase):
-    def setup(self):
-        opts = Options()
-        opts.add_argument("--headless")
-        self.browser = webdriver.Firefox(options=opts)
+    def setUp(self):
+        # opts = Options()
+        # opts.add_argument("--headless")
+        # self.browser = webdriver.Firefox(options=opts)
+        self.browser = webdriver.Firefox()
         
     def tearDown(self) -> None:
         self.browser.quit()
 
     def test_can_create_account(self):
         #pitur types the url of the new hip website
-        self.browser.get(self.live_server_url)
+        self.browser.get(self.live_server_url+"login/")
 
         #He sees that login is in the title
         self.assertIn("Create Account",self.browser.title)
