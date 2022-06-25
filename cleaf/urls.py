@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from pages import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("accounts/",include("django.contrib.auth.urls")),
-    path("",views.homepage_render,name="homepage")
+    path("",views.homepage_render,name="homepage"),
+    path("accounts/payments/", views.esewa.as_view(), name="esewa"),
 ]
