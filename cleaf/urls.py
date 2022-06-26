@@ -20,7 +20,7 @@ urlpatterns = [
     path("",views.homepage_render,name="homepage"),
     path("donate/",views.donate_render,name="donate"),
     path("login/",views.login_render,name="login"),
-    path("donate/payment/",views.payment_render,name="payment"),
-    
+    path("donate/<str:donate>/payment/",views.payment_render,name="payment"),
+
 ]
     
