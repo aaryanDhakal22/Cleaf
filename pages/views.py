@@ -32,8 +32,8 @@ def login_render(request):
     return render(request,"login.html")
 
 
-def payment_render(request):
-    if request.method=="POST":
+def payment_render(request,donate):
+    if request.method=="POST" and donate!= None:
         animal = request.POST.get("food_animal")
         donate = request.POST.get("charity_money")
         tree = request.POST.get("tree_plant")

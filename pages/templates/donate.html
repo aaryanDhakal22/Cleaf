@@ -5,27 +5,38 @@
 {% block body %}
 {% load static %}
 <div class="container p-5 mt-5 ml-5">
-    <div class="row ">
+    <div class="row gy-5">
         <div class="col-4">
-            <a href = "animal/payment"class="">
+            <a href = "animal/payment/"class="">
                 <img class = "donate_img" src="{% static 'images/animal.png' %}" alt="">
             </a>
         </div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
+        <div class="col-4">
+            <a href = "food_factory/payment/"class="">
+                <img class = "donate_img" src="{% static 'images/food_factory.png' %}" alt="">
+            </a>
+        </div>
+        <div class="col-4">
+            <a href = "money/payment/"class="">
+                <img class = "donate_img" src="{% static 'images/money.png' %}" alt="">
+            </a>
+        </div>
+        <div class="col-4">
+            <a href = "plant/payment/"class="">
+                <img class = "donate_img" src="{% static 'images/plant.png' %}" alt="">
+            </a>
+        </div>
+        <div class="col-4">
+            <a href = "well/payment/"class="">
+                <img class = "donate_img" src="{% static 'images/well.png' %}" alt="">
+            </a>
+        </div>
+        <div class="col-4">
+            <a href = "scholarship/payment/"class="">
+                <img class = "donate_img" src="{% static 'images/scholarship.png' %}" alt="">
+            </a>
+        </div>
     </div>
 </div>
-<form action="payment/" method="POST">
-    {% csrf_token %}
-    <button name="food_animal">Food for the animal shelter</button>
-    <button name="charity_money">Donate to charity</button>
-    <button name="food_bank">Provide to feed a family</button>
-    <button name="tree_plant">Plant a tree</button>
-    <button name="water_well">Build a well in africa</button>
-    <button name="scholarship">Help a student with his needs</button>
-</form>
 
 {% endblock body %}
