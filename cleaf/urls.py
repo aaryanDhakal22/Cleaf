@@ -23,3 +23,4 @@ urlpatterns = [
     path("",views.homepage_render,name="homepage"),
     path("accounts/payments/", views.esewa.as_view(), name="esewa"),
 ]
+    
