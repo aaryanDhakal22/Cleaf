@@ -1,16 +1,12 @@
-{% extends 'base.html' %}
-
-{% block title %}Donate{% endblock title %}
-
-{% block body %}
+{% extends 'base.html' %} {% block title %}Donate{% endblock title %} {% block body %}
 <form action="payment/" method="POST">
-    {% csrf_token %}
-    <button name="food_animal">Food for the animal shelter</button>
-    <button name="charity_money">Donate to charity</button>
-    <button name="food_bank">Provide to feed a family</button>
-    <button name="tree_plant">Plant a tree</button>
-    <button name="water_well">Build a well in africa</button>
-    <button name="scholarship">Help a student with his needs</button>
+  {% csrf_token %}
+  <input type="submit" value="Food for the animal shelter" name="food_animal" />
+  <input type="submit" name="charity_money" value="Donate to charity" />
+  <input type="submit" name="food_bank" value="Provide to feed a family" />
+  <input type="submit" name="tree_plant" value="Plant a tree" />
+  <input type="submit" name="water_well" value="Build a well in africa" />
+  <input type="submit" name="scholarship" value="Help a student with his needs" />
 </form>
 
 {% endblock body %}
