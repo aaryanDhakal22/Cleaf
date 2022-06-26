@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Donate{% endblock title %}
+
+{% block body %}
+<form action="payment/" method="POST">
+    {% csrf_token %}
+    <button name="food_animal">Food for the animal shelter</button>
+    <button name="charity_money">Donate to charity</button>
+    <button name="food_bank">Provide to feed a family</button>
+    <button name="tree_plant">Plant a tree</button>
+    <button name="water_well">Build a well in africa</button>
+    <button name="scholarship">Help a student with his needs</button>
+</form>
+
+{% endblock body %}
