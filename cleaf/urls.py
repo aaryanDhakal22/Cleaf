@@ -18,9 +18,10 @@ from django.urls import path,include
 from pages import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("accounts/",include("django.contrib.auth.urls")),
     path("",views.homepage_render,name="homepage"),
-    path("accounts/payments/", views.esewa.as_view(), name="esewa"),
+    path("donate/",views.donate_render,name="donate"),
+    path("login/",views.login_render,name="login"),
+    path("payment/",views.donate_render,name="payment"),
+    path("payments/", views.esewa.as_view(), name="esewa"),
 ]
     
