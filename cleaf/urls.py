@@ -21,5 +21,6 @@ urlpatterns = [
     path("donate/",views.donate_render,name="donate"),
     path("login/",views.login_render,name="login"),
     path("donate/payment/",views.payment_render,name="payment"),
+    
 ]
     

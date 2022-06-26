@@ -24,7 +24,7 @@ def login_render(request):
     return render(request,"login.html")
 
 
-def payment_render(request):
+def payment_render(request,):
     if request.method=="POST":
         name = request.POST["name"]
     context={}

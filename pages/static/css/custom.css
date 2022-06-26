@@ -1,0 +1,32 @@
+.bg-blue {
+  background-color: #9ce0e3;
+}
+.bg-blue:hover {
+  background-color: #4cdae1;
+}
+.bg-red {
+  background-color: #d4445a;
+}
+.bg-red:hover {
+  background-color: #d52a44;
+}
+.bord-blue {
+  border-color: #9ce0e3;
+}
+.bord-red {
+  border-color: #d4445a;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.pre-marg {
+  margin-top: 10rem;
+}
+.donate_img {
+  height: 18rem;
+}
+.no-outline {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}

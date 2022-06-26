@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <title>{% block title %} {% endblock title %}</title>
-</head>
-<body>
-    {% block body %}
-    
-    {% endblock body %}
-</body>
+  </head>
+  <body>
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="{% static 'images/logo2.png' %}" width="60" height="40" alt="SchoolLogo"
+        /></a>
+        <div class="d-flex" role="search">
+          <a href="donate/"><button class="btn bg-blue bord-blue text-light px-3" type="submit">Donate</button></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn bg-red bord-red text-light px-3" type="submit">Sell</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </div>
+    </nav>
+    {% block body %} {% endblock body %}
+  </body>
 </html>

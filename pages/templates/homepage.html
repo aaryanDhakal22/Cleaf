@@ -3,7 +3,40 @@
 {% block title %}Homepage{% endblock title %}
 
 {% block body %}
+{% load static %}
+<div class="container">
+    <div class="row">
+        <div class="col-8"><img class="img-fluid" src="{% static 'images/jumbo.png' %}" alt="donation_jumbo_logo"></div>
+        <div class="col-4 pre-marg h1">"When we give to others we arent just giving it to them we are also teaching them to give."</div>
+    </div>
+    <div class="text-center h2 mt-2">"ONE MANS TRASH IS ANOTHER MANS TREASURE"</div>
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="row mt-5">
+                <div class="col-6"><div class="mt-4 display-2 text-center">WHY</div></div>
+                
+                <div class="col-4"><div class="h4 lead text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                   laboris nisi ut aliquip ex ea commodo consequat.
+                   "But I must explain to you how all this mistaken
+                   </div></div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="row mt-5">
+                
+                <div class="col-2"></div>
+                <div class="col-4 text-left">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                   laboris nisi ut aliquip ex ea commodo consequat.
+                   "But I must explain to you how all this mistaken</div>
+                   <div class="col-6"><div class="mt-4 display-2 text-center">HOW?</div></div>
+            </div>
+        </div>
+    </div>
+    <hr class="mb-5">
 
-<h1>homepage</h1>
-<h3>hi {{ name }}</h3>
+</div>
 {% endblock body %}
